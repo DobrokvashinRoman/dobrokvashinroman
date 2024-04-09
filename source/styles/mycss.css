@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap>');
+
+body {
+    background: linear-gradient(233deg, #f5ded7 0%, #e7e4cb 93%);
+    font-family: 'Caveat', serif;
+    font-size: 25px;
+}
+
+.nav-link {
+    color:rgb(128, 126, 249);
+}
+
+.navbar-nav .nav-link.active {
+    color:rgb(143, 142, 142);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-toggler {
+    background-color:rgb(143, 142, 142);
+}
+
+.sidebar {
+    color: rgb(3, 3, 3);
+    background: linear-gradient(53deg, #f5ded7 0%, #e7e4cb 93%);
+}
+
+.card {
+    background: linear-gradient(53deg, #f5ded7 0%, #e7e4cb 93%);
+}
+
+.card-body a {
+    font-weight: bold;
+}
+
+.sidebar h2 {
+    font-weight: bold;
+}
+
+.sidebar p {
+    font-size: 30px;
+}
+
+.btn {
+    font-weight: bold;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(1) invert(1) contrast(10.5) sepia(1) hue-rotate(345deg);
+}
+
+.media-links {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+footer {
+    background: rgb(3, 3, 3);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer-text {
+    color:rgb(128, 126, 249);
+}
+
+.call-anim {
+    animation: myAnimCall 2s ease 1s infinite normal forwards;
+}
+
+@keyframes myAnimCall {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
